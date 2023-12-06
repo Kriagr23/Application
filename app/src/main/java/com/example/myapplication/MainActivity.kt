@@ -13,14 +13,17 @@ class MainActivity : AppCompatActivity() {
         // Find the button using findViewById
         val textView: TextView = findViewById(R.id.textView)
         val button: Button = findViewById(R.id.button)
-
+        button.setOnClickListener {
+            // Change the button color when clicked
+            button.setBackgroundColor(Color.GREEN)
         button.setOnClickListener {
             // Call a function to handle the button click
-            onButtonClick(textView)
+//            onButtonClick(textView)
+            //comment
         }
     }
-    fun onButtonClick(textView: TextView) {
-        // Change the button color when clicked
-        textView.setBackgroundColor(Color.BLUE)
+//    fun onButtonClick(textView: TextView) {
+//        // Change the button color when clicked
+//        textView.setBackgroundColor(Color.BLUE)
     }
 }
